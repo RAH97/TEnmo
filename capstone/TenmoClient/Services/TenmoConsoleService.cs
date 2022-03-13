@@ -190,6 +190,14 @@ namespace TenmoClient.Services
                 transfer.AccountFromId = accountFrom.AccountId;
 
                 decimal amountToSend = PromptForDecimal("Please enter the amount you would like to send");
+                if (amountToSend < 0.01M)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("You must send at least $0.01 TE bucks.");
+                    Console.ResetColor();
+                    Pause();
+                    return emptyTransfer;
+                }
                 if (amountToSend > accountFrom.Balance)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
@@ -241,6 +249,13 @@ namespace TenmoClient.Services
                     transfer.AccountToId = accountFrom.AccountId;
                     transfer.AccountFromId = accounttosend.AccountId;
                     decimal amountToSend = PromptForDecimal("Please enter the amount you would like to request");
+                    if(amountToSend < 0.01M)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("You must request at least $0.01 TE bucks");
+                        Console.ResetColor();
+                        Pause();
+                    }
                     transfer.Amount = amountToSend;
                     
                     return transfer;

@@ -43,11 +43,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Student\\git\\c-sharp-capstone-module-2-team-2\\capstone\\TenmoClient\\TenmoClient.csproj",
+      "projectUniqueName": "C:\\Users\\Student\\git\\TEnmo\\capstone\\TenmoClient\\TenmoClient.csproj",
       "projectName": "TenmoClient",
-      "projectPath": "C:\\Users\\Student\\git\\c-sharp-capstone-module-2-team-2\\capstone\\TenmoClient\\TenmoClient.csproj",
+      "projectPath": "C:\\Users\\Student\\git\\TEnmo\\capstone\\TenmoClient\\TenmoClient.csproj",
       "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Student\\git\\c-sharp-capstone-module-2-team-2\\capstone\\TenmoClient\\obj\\",
+      "outputPath": "C:\\Users\\Student\\git\\TEnmo\\capstone\\TenmoClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
